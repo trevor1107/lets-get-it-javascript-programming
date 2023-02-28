@@ -72,7 +72,9 @@ console은 제대로 입력했으나 log에서 오타가 나면 발생하는 �
 
 브라우저의 콘솔은 코드를 한 줄씩 입력받고(Read), 받은 입력을 평가(Eval)하고, 결과를 출력(Print)한 뒤, 다시 프롬프트가 나타나 새로운 입력을 기다리는 과정을 반복한다(Loop). 이러한 특성 때문에 콘솔을 REPL(Read-Eval-Print-Loop)라고 한다.
 
-![REPL](images/chapter01-REPL.png)
+<div align='center'>
+   <img src='images/chapter01-REPL.png' alt='REPL' width='400' />
+</div>
 
 ## 1.2 프로그래밍 사고력 기르기
 
