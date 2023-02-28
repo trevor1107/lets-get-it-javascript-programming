@@ -100,9 +100,13 @@ console은 제대로 입력했으나 log에서 오타가 나면 발생하는 �
 
 순서도의 예시)
 
-![flowchart](images/chapter01-flowchart.jfif)
+<div align='center'>
+   <img src='images/chapter01-flowchart.jfif' alt='flowchart' />
+</div>
 
-![flowchartTable](images/chapter01-flowchart-table.png)
+<div align='center'>
+   <img src='images/chapter01-flowchart-table.png' alt='flowchartTable' />
+</div>
 
 순서도를 잘 그린다는 것은 주어진 알고리즘 문제를 해결할 수 있는 것과 같다고 한다. 그리고 저자는 프로그래밍 공부와 더불어 영어 공부를 같이하는 것이 더 느리게 가는 것으로 보이지만, 나중에는 지름길이 되어줄 만큼 도움이 될 것이라고 말한다.  
   
