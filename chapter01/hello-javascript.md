@@ -1,8 +1,21 @@
 # Hello, JavaScript
 
+- [이 책과 강의를 학습하는 목적](#이-책과-강의를-학습하는-목적)
+- [저자의 인사말](#저자의-인사말)
+- [1.1 자바스크립트를 시작하기 전에](#11-자바스크립트를-시작하기-전에)
+  - [자바스크립트를 배울 때 도움 되는 자료](#자바스크립트를-배울-때-도움-되는-자료)
+  - [프로그램 설치](#프로그램-설치)
+  - [자바스크립트 코드 실행](#자바스크립트-코드-실행)
+    - [흔하게 발생하는 에러](#흔하게-발생하는-에러)
+    - [인터프리터와 컴파일](#인터프리터와-컴파일)
+    - [REPL(Read-Eval-Print-Loop)](#replread-eval-print-loop)
+- [1.2 프로그래밍 사고력 기르기](#12-프로그래밍-사고력-기르기)
+  - [순서도를 그리는 방법](#순서도를-그리는-방법)
+    - [순서도 그리기 웹 도구 추천](#순서도-그리기-웹-도구-추천)
+
 ## 이 책과 강의를 학습하는 목적
 
- [Let’s Get IT 자바스크립트 프로그래밍 : 네이버 도서](https://search.shopping.naver.com/book/catalog/32438311618?query=let%27s%20get%20it%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D&NaPm=ct%3Dlegv0isw%7Cci%3D25849ff889f3469e1467f6e4bc913d2d214f95ff%7Ctr%3Dboksl%7Csn%3D95694%7Chk%3D104c7472d25a284d40fcff99116686adcb051716)
+[Let’s Get IT 자바스크립트 프로그래밍 : 네이버 도서](https://search.shopping.naver.com/book/catalog/32438311618?query=let%27s%20get%20it%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D&NaPm=ct%3Dlegv0isw%7Cci%3D25849ff889f3469e1467f6e4bc913d2d214f95ff%7Ctr%3Dboksl%7Csn%3D95694%7Chk%3D104c7472d25a284d40fcff99116686adcb051716)
 
 내가 이 책을 선택하고 학습하는 이유는, 이전에 Node.js 교과서 개정 2판을 읽고 '제로초(조현영)님이 쓴 책이면 믿고 읽을 수 있다.'라는 마음도 있었고, 프로그래밍 사고력을 기르는 데 도움이 될만한 책이기 때문이다.
 
@@ -43,7 +56,7 @@
 
 그리고 흰색 화면을 클릭하고 console.log('Hello,world!')를 입력 후 엔터를 치면 Hello, world!라고 찍힌다.
 
-![console.log image](/images/chapter01-console-log.webp)
+![console.log image](images/console-log.webp)
 
 #### 흔하게 발생하는 에러
 
@@ -73,7 +86,7 @@ console은 제대로 입력했으나 log에서 오타가 나면 발생하는 �
 브라우저의 콘솔은 코드를 한 줄씩 입력받고(Read), 받은 입력을 평가(Eval)하고, 결과를 출력(Print)한 뒤, 다시 프롬프트가 나타나 새로운 입력을 기다리는 과정을 반복한다(Loop). 이러한 특성 때문에 콘솔을 REPL(Read-Eval-Print-Loop)라고 한다.
 
 <div align='center'>
-   <img src='images/chapter01-REPL.webp' alt='REPL' width='400' />
+   <img src='images/REPL.webp' alt='REPL' width='400' />
 </div>
 
 ## 1.2 프로그래밍 사고력 기르기
@@ -101,11 +114,11 @@ console은 제대로 입력했으나 log에서 오타가 나면 발생하는 �
 순서도의 예시)
 
 <div align='center'>
-   <img src='images/chapter01-flowchart.webp' alt='flowchart' />
+   <img src='images/flowchart.webp' alt='flowchart' />
 </div>
 
 <div align='center'>
-   <img src='images/chapter01-flowchart-table.webp' alt='flowchartTable' />
+   <img src='images/flowchart-table.webp' alt='flowchartTable' />
 </div>
 
 순서도를 잘 그린다는 것은 주어진 알고리즘 문제를 해결할 수 있는 것과 같다고 한다. 그리고 저자는 프로그래밍 공부와 더불어 영어 공부를 같이하는 것이 더 느리게 가는 것으로 보이지만, 나중에는 지름길이 되어줄 만큼 도움이 될 것이라고 말한다.  
