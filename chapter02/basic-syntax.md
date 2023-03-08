@@ -1066,5 +1066,5 @@ const robot = {
 }
 
 robot.skill.jumpAttack(); // jumpAttack!!
-robot['skill']['SpeedUpBuff'](); // SpeedUpBuff
+robot['skill']['SpeedUpBuff'](); // SpeedUp!!
 ```
