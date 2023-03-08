@@ -1051,3 +1051,20 @@ let b = a; // b 변수에 a의 값을 대입하여 값의 복사가 이루어진
 a = 'hello'
 console.log(b); // 1, 참조가 아닌 복사라 a의 값을 바꿔도 변화가 없다.
 ```
+
+#### 객체 속의 객체
+
+객체 속에 객체를 중첩시켜서 만들 수 있다.
+
+```js
+const robot = {
+  level: 2,
+  skill: {
+    jumpAttack: function () { console.log('jumpAttack!!'); },
+    SpeedUpBuff: function() { console.log('SpeedUp!!'); },
+  }
+}
+
+robot.skill.jumpAttack(); // jumpAttack!!
+robot['skill']['SpeedUpBuff'](); // SpeedUpBuff
+```
