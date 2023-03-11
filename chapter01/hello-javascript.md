@@ -85,7 +85,7 @@ console은 제대로 입력했으나 log에서 오타가 나면 발생하는 �
 
 브라우저의 콘솔은 코드를 한 줄씩 입력받고(Read), 받은 입력을 평가(Eval)하고, 결과를 출력(Print)한 뒤, 다시 프롬프트가 나타나 새로운 입력을 기다리는 과정을 반복한다(Loop). 이러한 특성 때문에 콘솔을 REPL(Read-Eval-Print-Loop)라고 한다.
 
-<div align='center'>
+<div>
    <img src='images/REPL.webp' alt='REPL' width='400' />
 </div>
 
@@ -113,13 +113,9 @@ console은 제대로 입력했으나 log에서 오타가 나면 발생하는 �
 
 순서도의 예시)
 
-<div align='center'>
-   <img src='images/flowchart.webp' alt='flowchart' />
-</div>
+![순서도](images/flowchart.webp)
 
-<div align='center'>
-   <img src='images/flowchart-table.webp' alt='flowchartTable' />
-</div>
+![순서도 도형과 기호](images/flowchart-table.webp)
 
 순서도를 잘 그린다는 것은 주어진 알고리즘 문제를 해결할 수 있는 것과 같다고 한다. 그리고 저자는 프로그래밍 공부와 더불어 영어 공부를 같이하는 것이 더 느리게 가는 것으로 보이지만, 나중에는 지름길이 되어줄 만큼 도움이 될 것이라고 말한다.  
   
