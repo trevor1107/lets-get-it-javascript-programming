@@ -1,5 +1,32 @@
 # DOM 객체 다루기
 
+- [3.1 순서도 그리기](#31-순서도-그리기)
+  - [순서도의 장점을 한번 생각해보자](#순서도의-장점을-한번-생각해보자)
+  - [그렇다면 단점은 무엇일까?](#그렇다면-단점은-무엇일까)
+  - [프로그램 절차 알아보기](#프로그램-절차-알아보기)
+    - [프로그램 절차를 만들 때의 원칙](#프로그램-절차를-만들-때의-원칙)
+    - [일반적인 형태로 바꾼 끝말잇기](#일반적인-형태로-바꾼-끝말잇기)
+    - [만든 절차를 예시를 통해 검증해보자](#만든-절차를-예시를-통해-검증해보자)
+- [3.2 HTML 화면 만들기](#32-html-화면-만들기)
+- [3.3 값 입력받아 변수에 저장하기](#33-값-입력받아-변수에-저장하기)
+  - [prompt](#prompt)
+  - [alert](#alert)
+  - [confirm](#confirm)
+- [3.4 HTML 태그 선택하기](#34-html-태그-선택하기)
+  - [태그 선택자](#태그-선택자)
+  - [다중 선택자](#다중-선택자)
+  - [특정한 태그 선택자(HTML id 및 class)](#특정한-태그-선택자html-id-및-class)
+    - [HTML id](#html-id)
+    - [HTML class](#html-class)
+    - [내부 선택자(하위 선택자)](#내부-선택자하위-선택자)
+- [3.5 태그에 이벤트 달기](#35-태그에-이벤트-달기)
+- [3.6 첫 단어를 입력한 사람인지 판단하기](#36-첫-단어를-입력한-사람인지-판단하기)
+- [3.7 올바른 단어인지 판단하기](#37-올바른-단어인지-판단하기)
+- [3.8 틀렸을 때 오류 표시하기](#38-틀렸을-때-오류-표시하기)
+- [3.9 순서도 최적화하기](#39-순서도-최적화하기)
+- [Self Check 쿵쿵따 게임 만들기](#self-check-쿵쿵따-게임-만들기)
+  - [순서도 작성하기](#순서도-작성하기)
+
 ## 3.1 순서도 그리기
 
 > 프로그래밍 언어는 단순히 외운다고 익혀지는 것이 아니라, 프로그램을 실제로 만들어 보고 배웠던 문법이 어디에 어떻게 쓰이는지 몸소 터득해야 합니다. 프로그래밍적으로 사고하지 못한다면 아무리 문법을 외워도 프로그램을 만들 수 없습니다.
@@ -456,7 +483,7 @@ input 태그에 글자를 입력하면 input 이벤트가 발생한다.
 입력한 단어가 틀렸거나, 다음 사람에게 순서를 넘기기 전에 `입력창을 비우고 커서를 둔다`라는 절차가 추가되었다.
 `입력태그.value`으로 입력창의 값을 가져올 수 있다.
 `입력태그.value = 값`으로 입력창의 값을 변경할 수 있다.
-`입력태그.focus()`으로 입력창을 포커싱되게 할 수 있다. 여기서 `포커싱`이란 입력창을 마우스 왼쪽 클릭해서 입력할 수 있는 활성화된 상태를 말한다.
+`입력태그.focus()`으로 입력창을 하이라이트(포커싱) 되게 한다. 여기서 `포커싱`이란 입력창을 마우스 왼쪽 클릭해서 입력할 수 있는 활성화된 상태를 말한다.
 
 ```html
 <script>
@@ -606,3 +633,171 @@ AND 관계가 있는 판단은 아래의 표처럼 할 수 있다.
 > \- 제로초 -
 
 순서도의 중요함을 느낀다. 코드는 그저 순서도에 있는 절차를 작성하기만 되는 것이다. 순서도가 잘못되었다면 코드도 잘못된다. 저자가 말하는 대로 바로 코딩으로 옮기고 싶은 욕구가 샘솟았다. 익숙하던 것이니까.. 하지만 익숙하지 않은 순서도를 작성하고 코드로 옮기는 것이 나중에는 더 좋은 결과로 이어질 것이라 믿는다.
+
+## Self Check 쿵쿵따 게임 만들기
+
+직접 풀기 전에 답을 먼저 보지 말아야하고, 순서도를 직접 그려보고 직접 코딩해 봐야한다.
+끝말잇기 게임을 응용해 쿵쿵따 게임을 만드는 미션이다.
+
+1. 입력할 수 있는 단어를 세 글자로 고정하라. 세 글자가 아니라면 다시 입력하라고 표시해야한다.
+2. 초반에 prompt 함수를 사용해 몇 명이 참가할지를 선택할 때 사용자가 취소를 누르면 다음 코드가 실행되지 않게 처리하라.
+3. 개인 미션으로 한글로만 입력할 수 있도록 한다.
+4. 개인 미션으로 이전에 입력되었던 단어들을 표시한다.
+
+### 순서도 작성하기
+
+끝말잇기에서 제시어가 세 글자로 고정되는 것 말고는 추가 제약은 없어서 절차는 거의 동일하다. 순서도를 작성해보자.
+
+![쿵쿵따 게임 순서도](images/kungkungda-flowchart.webp)
+
+'변수를 만든다'라는 부분은 절차가 많아지면 빼도 될 것 같다는 생각이 든다. 절차만 작성한 후 필요 데이터를 파악해서 변수로 만들어두는 것이다. '입력된 단어가 제시어가 된다'라는 절차에서 입력된 단어, 제시어라는 두 개의 변수가 필요하다는 것을 알 수 있기 때문이다.
+
+개인 미션 이외에도 '몇 명이 참가하는지 입력받는다' 절차에 대해 prompt에서 취소를 누르거나 마이너스의 숫자이거나 문자열을 입력하는 경우 대화 상자에 다시 입력하라는 문구를 추가했다.
+
+```html
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쿵쿵따 게임</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;">쿵쿵따 게임</h1>
+  <div id="view" style="display: flex; flex-direction: column; align-items: center; visibility: hidden;">
+    <h2>쿵쿵따 게임에 오신것을 환영합니다.</h2>
+    <h4 style="width:40%">쿵쿵따는 세 글자만 입력이 가능하며, 제시어의 마지막 글자가 입력할 단어의 첫 번째 글자가 됩니다. 즐거운 게임이 되시길 바랍니다.</h4>
+    <h3>참가자는 총 <span id="number" style="color:chocolate;">?</span>명 입니다.</h3>
+    <h3><span id="order" style="color:darkcyan">1</span>번 참가자의 차례입니다.</h3>
+    <p>이번 제시어는 <span id="word" style="font-weight: bold; color: tomato;">○○○</span> 입니다.</p>
+    <div>
+      <input id="input" type="text">
+      <button id="push-btn">입력</button>
+    </div>
+    <p>쿵쿵따리 쿵쿵따~ 쿵쿵따리 쿵쿵따~ 쿵! 쿵! 쿵! 쿵!</p>
+    <p id="word-chain" style="max-width: 70%;"></p>
+  </div>
+
+  <script>
+    // 시작
+    // 몇 명이 참가하는지 입력 받는다
+    const number = Number(window.prompt('몇 명이 참가하나요?'));
+    /**
+     * 미션 2. 초반에 prompt 함수를 사용해 몇 명이 참가할지를 선택할 때 
+     * 사용자가 취소를 누르면 다음 코드가 실행되지 않게 처리하라.
+     * 
+     * 사용자가 프롬프트에서 취소를 누르면 false를 반환한다. 그것을 Number로
+     * 변환하면 0이 된다. 즉 Number가 0 보다 클 때만 다음 코드가 실행하게 한다.
+     * 그리고 혹여나 사용자가 마이너스를 입력하는 경우도 방지하게 된다.
+     */
+    if (number > 0) {
+      // 게임을 시작하면 화면을 활성화
+      document.getElementById('view').style.visibility = 'visible';
+
+      // 참가 순서를 정한다
+      // 여기서는 1 -> 2 -> 3 -> 1 같은 순으로 한다.
+
+      // Element 바인딩
+      const $number = document.getElementById('number');
+      const $word = document.getElementById('word');
+      /** @type HTMLInputElement JSDoc 주석이다. 변수 타입 힌트를 설정한다. */
+      const $input = document.getElementById('input');
+      const $order = document.getElementById('order');
+      const $button = document.getElementById('push-btn');
+      const $wordChain = document.getElementById('word-chain');
+
+      // 참가자 인원 표시
+      $number.textContent = number;
+
+      // 제시어를 저장할 변수를 만든다
+      let word;
+      // 입력할 단어를 저장할 변수를 만든다
+      let newWord;
+      // 대기
+
+      // 단어 입력(input 이벤트)
+      const onInput = (event) => {
+        const inputValue = event.target.value;
+        // 미션 3. 개인 미션, 한글로만 입력할 수 있도록 한다.
+        const regExp = /^[ㄱ-ㅎㅣ가-힣]+$/;
+
+        // 빈문자열이 아닐 때 한글로 입력되었는지 확인한다.
+        if (inputValue && !regExp.test(inputValue)) {
+          // 한글이 아니라면 경고 메시지를 띄우고 입력창을 비운다.
+          alert('한글로만 입력이 가능합니다.');
+          event.target.value = '';
+          return;
+        }
+
+        /**
+         * 미션 1. 입력할 수 있는 단어를 세 글자로 고정하라. 
+         * 세 글자가 아니라면 다시 입력하라고 표시해야한다.
+         */
+        if (inputValue.length > 3) {
+          alert('단어를 세 글자로 다시 입력해주세요.');
+          event.target.value = '';
+          return;
+        }
+
+        newWord = inputValue;
+      };
+
+      // 입력 버튼 클릭(버튼 클릭 이벤트)
+      const onClickButton = () => {
+        // '입력한 단어가 세글자이면서' '제시어가 비어있거나' '입력한 단어가 올바른가'?
+        if (newWord.length === 3 && (!word || word[word.length - 1] === newWord[0])) {
+          // 예. 올바르다
+          // 입력된 단어가 제시어가 된다
+          word = newWord;
+          $word.textContent = word;
+
+          // 다음 사람에게 순서를 넘긴다
+          const order = Number($order.textContent);
+          if (order < number) {
+            $order.textContent = order + 1;
+          } else {
+            $order.textContent = 1;
+          }
+
+
+          // 미션 4. 개인 미션으로 이전에 입력되었던 단어들을 표시한다.
+          if ($wordChain.textContent) {
+            $wordChain.textContent = `${$wordChain.textContent} -> ${word}`;
+          } else {
+            $wordChain.textContent = word;
+          }
+
+        } else if (newWord.length < 3) {
+          // 아니요. 올바르지 않다.
+          // 입력한 글자가 세 글자보다 작은가?
+          // 예. 세 글자를 입력하라고 표시한다
+          alert('입력한 단어가 부족합니다. 세 글자로 입력해주세요.')
+        } else {
+          // 아니요. 올바르지 않다
+          // 입력한 글자가 세 글자보다 작은가?
+          // 아니요. 틀렸다고 표시한다
+          alert('입력한 단어가 틀렸습니다.');
+        }
+
+        // 입력창을 비우고 커서를 포커싱한다
+        $input.value = '';
+        $input.focus();
+      }
+
+      // 이벤트 리스너 설정
+      $input.addEventListener('input', onInput);
+      $button.addEventListener('click', onClickButton);
+    } else {
+      alert('취소를 누르셨거나 잘못 입력하셨습니다. \n새로고침(F5)하여 다시 참여해 주시기 바랍니다.')
+    }
+  </script>
+</body>
+
+</html>
+```
+
+html 파일을 실행하고 게임을 진행한 화면은 아래와 같다.
+
+![쿵쿵따 게임 화면](images/kungkungda-relay.webp)
